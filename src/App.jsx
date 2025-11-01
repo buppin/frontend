@@ -10,8 +10,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>}>
           </Route>
-          <Route path="/a" element={<Home></Home>}>
-          </Route>
         </Routes>
       </HashRouter>
     </>
