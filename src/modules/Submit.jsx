@@ -1,6 +1,6 @@
 import { useRef } from "react"
 
-function Submit() {
+function Submit({setFlag}) {
     var idRef = useRef()
     var textRef = useRef()
     var buttonClick = () => {
@@ -18,6 +18,8 @@ function Submit() {
         }).then(() => {
             idRef.current.value = ""
             textRef.current.value = ""
+            setFlag(prev => prev +1)
+
         })
     }
     return (
